@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Neem contact op met Alex! </title>
+    <link rel="stylesheet"
+    type="text/css" 
+    href="styles.css">
+</head>
+
+<form name="contact" method="POST" data-netlify="true">
+    <p>
+        <label>Je naam:<input type="text" name="naam" id="name"></label> 
+    </p>
+    <p>
+        <label for="phone">Telefoonnummer:
+        <input type="tel" name="phone" id="phone">
+        </label>
+    </p>
+    <p>
+        <label>Je e-mailadres:<input type="email" name="email" id="email"></label>
+    </p>
+    <p>
+        <label>Je leeftijd:<input type="number" name="leeftijd" id="age" min="5" max="125"></label>
+    </p>
+    <p>
+        <label>Je geboortedatum:<input type="date" name="geboortedatum" id="geboortedatum"></label>
+    </p>
+    <p>
+        <label> Je gender:<br>
+        <input type="radio" name="gender" id="man" value="Man">
+        <label for="html">Man</label><br>
+        <input type="radio" name="gender" id="vrouw" value="Vrouw">
+        <label for="css">Vrouw</label><br>
+        <input type="radio" name="gender" id="onbekend" value="Onbekend">
+        <label for="javascript">Geen idee eigenlijk...</label>
+        </label>    
+    </p>
+    <p> 
+        <label> Je favoriete cuisine:<br>
+        <input type="checkbox" id="cuisine1" name="cuisine1" value="Checked">
+        <label for="cuisine1"> Spaans</label><br>
+        <input type="checkbox" id="cuisine2" name="cuisine2" value="Checked">
+        <label for="cuisine2"> Frans</label><br>
+        <input type="checkbox" id="cuisine3" name="cuisine3" value="Checked">
+        <label for="cuisine3"> Arabisch</label><br>
+        <input type="checkbox" id="cuisine4" name="cuisine4" value="Checked">
+        <label for="cuisine4"> Italiaans</label><br>
+        </label>
+    </p>
+    <p>
+    <label>Je favoriete kleur schort:<br><input type="color" name="schortkleur" id="schortkleur"/></label>
+    </p>
+    <p>
+        <label>Je biografie:<br>
+            <textarea name="message" id="message" rows="10" cols="35"></textarea></label>
+    </p>
+    <p>
+        <label>Upload je eigen recept!:<br>
+            <input type="file" name="upload" id="upload"></label>
+    </p>
+    <p>
+        <label>De URL van jouw website:<br>
+            <input type="url" name="website" id="website"></label>
+    </p>
+    <p>
+        <button type="reset">Invoer wissen!</button>
+    </p>
+    <p>
+        <button type="submit">Verzenden!</button>
+    </p>
+</form>
+
+
+<br>
+<nav class="navigation-style">
+    <ul>
+        <a href="index.html">Terug naar de hoofdpagina!</a> 
+    </ul>
+</nav>
+</html>
