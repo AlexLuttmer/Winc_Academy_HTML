@@ -1,0 +1,80 @@
+.maingrid {
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(11, 1fr);
+  background-color: black;
+  color: white;
+  grid-template-areas:
+    "h h h"
+    "m m m"
+    "m m m"
+    "m m m"
+    "m m m"
+    "m m m"
+    "m m m"
+    "w w w"
+    "w w w"
+    "w w w"
+    "f f f";
+}
+
+.header {
+  background-color: lightblue;
+  grid-area: h;
+}
+
+.main {
+  background-color: green;
+  grid-area: m;
+}
+
+.widgets {
+  background-color: purple;
+  grid-area: w;
+}
+
+.footer {
+  background-color: navy;
+  grid-area: f;
+}
+
+/* Media Queries */
+
+@media (min-width: 1024px) {
+  .maingrid {
+    grid-gap: 8px;
+    grid-template-areas:
+      "h m m"
+      "h m m"
+      "h m m"
+      "h m m"
+      "h m m"
+      "h m m"
+      "h m m"
+      "h w w"
+      "h w w"
+      "h w w"
+      "h f f";
+    background-color: gray;
+  }
+}
+@media (min-width: 1200px) {
+  .maingrid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 12px;
+    grid-template-areas:
+      "h m m w"
+      "h m m w"
+      "h m m w"
+      "h m m w"
+      "h m m w"
+      "h m m w"
+      "h m m w"
+      "h m m w"
+      "h m m w"
+      "h m m w"
+      "h f f w";
+    background-color: white;
+  }
+}
