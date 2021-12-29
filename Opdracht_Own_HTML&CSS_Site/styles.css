@@ -169,7 +169,7 @@ p
 
 .par_sep
 {
-  width: 120px;
+  width: 140px;
   align-self: center;
   margin: 20px 0;
 }
@@ -350,11 +350,6 @@ p
     width: 28vw;
   }
 
-  .par_sep
-  {
-    width: 140px;
-  }
-
   .contact_form
   {
     grid-area: f;
@@ -492,11 +487,6 @@ p
   }
 
   .knights_left
-  {
-    width: 160px;
-  }
-
-  .par_sep
   {
     width: 160px;
   }
